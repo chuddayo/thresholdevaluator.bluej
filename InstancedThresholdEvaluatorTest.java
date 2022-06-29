@@ -20,8 +20,8 @@ public class InstancedThresholdEvaluatorTest {
 
     // given
     @Test
-    public void testIsThresholdExceedingTrue(int thresholdToBeSet) {
-        for (Integer thresholdTobeSet : new Integer[]{0, 5, 10, Integer.MIN_VALUE}) {
+    public void testIsThresholdExceedingTrue() {
+        for (Integer thresholdToBeSet : new Integer[]{0, 5, 10, Integer.MIN_VALUE}) {
             testIsThresholdExceeding(thresholdToBeSet, 1, false);
         }
     }

@@ -1,10 +1,14 @@
 public class InstancedThresholdEvaluator {
+    private int threshold;
+    public InstancedThresholdEvaluator() {
+        threshold = 0;
+    }
     /**
      * Write a method named `getThreshold` which returns `threshold` instance variable
      * @return `this.threshold`
      */
     public Integer getThreshold() {
-        return null;
+        return this.threshold;
     }
 
     /**
@@ -12,6 +16,7 @@ public class InstancedThresholdEvaluator {
      * @param thresholdToBeSet - value to set `threshold` field
      */ // TODO - ensure respective `SetThresholdTest` passes
     public void setThreshold(Integer thresholdToBeSet) {
+        this.threshold = thresholdToBeSet;
     }
 
     /**
@@ -22,7 +27,10 @@ public class InstancedThresholdEvaluator {
      * @return `true` if `limit` is greater than `threshold`
      */ // TODO - Create a respective test in the `StaticThresholdEvaluatorTest` class
     public Boolean isThresholdReached(Integer limit) {
-        return null;
+        if (limit > getThreshold()) {
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -33,6 +41,6 @@ public class InstancedThresholdEvaluator {
      * @return `true` if `limit` is greater than `threshold`
      */ // TODO - Ensure the respective tests in the `StaticThresholdEvaluatorTest` class passes
     public Boolean isThresholdExceeding(Integer limit) {
-        return null;
+        return (!isThresholdReached(limit));
     }
 }
