@@ -1,14 +1,14 @@
 #BlueJ package file
-dependency1.from=StaticThresholdEvaluatorTest
-dependency1.to=StaticThresholdEvaluator
+dependency1.from=InstancedThresholdEvaluatorTest
+dependency1.to=InstancedThresholdEvaluator
 dependency1.type=UsesDependency
-dependency2.from=InstancedThresholdEvaluatorTest
-dependency2.to=InstancedThresholdEvaluator
+dependency2.from=StaticThresholdEvaluatorTest
+dependency2.to=StaticThresholdEvaluator
 dependency2.type=UsesDependency
-editor.fx.0.height=947
-editor.fx.0.width=1324
-editor.fx.0.x=127
-editor.fx.0.y=-1039
+editor.fx.0.height=754
+editor.fx.0.width=1417
+editor.fx.0.x=160
+editor.fx.0.y=-911
 objectbench.height=100
 objectbench.width=776
 package.divider.horizontal=0.6

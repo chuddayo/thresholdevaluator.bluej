@@ -9,8 +9,9 @@ public class StaticThresholdEvaluator {
      * @return `true` if `limit` is less than `threshold`
      */ // TODO - Ensure the respective tests in the `StaticThresholdEvaluatorTest` class passes
     static Boolean isThresholdExceeding(Integer threshold, Integer limit) {
+        System.out.println(String.valueOf(threshold));
+        System.out.println(String.valueOf(limit));
         if (limit < threshold) {
-            System.out.println("true");
             return true;
         }
         return false;
@@ -26,7 +27,7 @@ public class StaticThresholdEvaluator {
      * @return `true` if `limit` is greater than `threshold`
      */ // TODO - Create a respective test in the `StaticThresholdEvaluatorTest` class
     static Boolean isThresholdReached(Integer threshold, Integer limit) {
-        return (!isThresholdExceeding(threshold, limit));
+        return !isThresholdExceeding(threshold, limit);
     }
 }
 
